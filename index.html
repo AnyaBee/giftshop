@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="main-header">
-            <nav class="quicklinks">
+        <header class="main-header clearfix">
+            <nav class="quick-links">
                 <ul>
                     <li>
                         <a href="#">Sell</a>
@@ -32,22 +32,22 @@
                     </li>
                 </ul>
             </nav>
-            <div class="container">
+            <div class="container clearfix">
                 <div class="logo">
                     <img src="images/logo.png" width="153" height="108" alt="logo">
                 </div>
-                <nav class="user-nav">
+                <nav class="user-nav clearfix">
                     <ul>
-                        <li>
+                        <li class="register">
                             <a href="#">Register</a>
                         </li>
-                        <li>
+                        <li class="sign-in">
                             <a href="#">Sign in</a>
                         </li>
-                        <li>
+                        <li class="wishlist">
                             <a href="#">Wishlist</a>
                         </li>
-                        <li>
+                        <li class="cart">
                             <a href="#">Cart</a>
                         </li>
 
@@ -55,7 +55,7 @@
                 </nav>
             </div>
             <nav class="main-nav">
-                <ul>
+                <ul class="navigation">
                     <li>
                         <a href="#">Art</a>
                     </li>
@@ -63,27 +63,29 @@
                         <a href="#">Home & Living</a>
                         <ul class="sub-nav">
                             <li>
-                                <div class="nav-item">
-                                    <img src="images/deer.jpg" width="76" heigh="76" alt="Menu Item's Image">
-                                    <a href="#"><h3>Item Name Here</h3></a>
+                                <div class="nav-item clearfix">
+                                    <img src="images/deer.jpg" width="76" height="76" alt="Menu Item's Image">
+                                    <div class="test">
+                                    <a href="#"><h3>item name here</h3></a>
                                     <p>Lorem Ipsum is simply dummy text of the</p>
-                                    <a href="#">More Detail</a>
+                                    <a class="nav-button" href="#">More Detail</a>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="nav-item">
-                                    <img src="images/deer.jpg" width="76" heigh="76" alt="Menu Item's Image">
+                                <div class="nav-item clearfix">
+                                    <img src="images/deer.jpg" width="76" height="76" alt="Menu Item's Image">
                                     <a href="#"><h3>Item Name Here</h3></a>
                                     <p>Lorem Ipsum is simply dummy text of the</p>
-                                    <a href="#">More Detail</a>
+                                    <a class="nav-button" href="#">More Detail</a>
                                 </div>
                             </li>
                             <li>
-                                <div class="nav-item">
-                                    <img src="images/deer.jpg" width="76" heigh="76" alt="Menu Item's Image">
+                                <div class="nav-item clearfix">
+                                    <img src="images/deer.jpg" width="76" height="76" alt="Menu Item's Image">
                                     <a href="#"><h3>Item Name Here</h3></a>
                                     <p>Lorem Ipsum is simply dummy text of the</p>
-                                    <a href="#">More Detail</a>
+                                    <a class="nav-button" href="#">More Detail</a>
                                 </div>
                             </li>
                             <li class="all">
@@ -116,47 +118,48 @@
             </nav>
         </header>
         <main>
-            <div class="container">
-               <section>
-                   <img src="images/men.jpg" width="670" height="570" alt="Men's Wear">
-                   <h1>Men’s Wear</h1>
-                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
-                   <p>Lorem Ipsum is simply dummy text</p>
+            <div class="container clearfix">
+               <section class="menswear">
+                   <div class="menswear-wrapper">
+                       <h1>Men’s Wear</h1>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
+                   </div>
+                   <p class="bg-red">Lorem Ipsum is simply dummy text</p>
                </section>
-                <section>
-                    <img src="images/women.jpg.jpg" width="494" height="320" alt="Women's Wear">
-                    <h1>Women's Wear</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                <section class="womenswear">
+                    <div class="womenswear-wrapper">
+                        <h1>Women's Wear</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    </div>
                 </section>
-                <section>
-                    <img src="images/girl.jpg" width="494" height="245" alt="Kid's Clothes">
+                <section class="kidswear">
                     <div class="shop-box">
-                        <span>Baby shop</span>
-                        <span>$99</span>
+                        <span class="category-name">Baby shop</span>
+                        <a href="#" class="gift"></a>
+                        <a href="#" class="cart"></a>
+                        <span class="price">$99</span>
                     </div>
                 </section>
-                <section>
+                <section class="search">
                     <div class="search-box">
-
+                        <form action="#" method="get">
+                            <input name="search" placeholder="Search your product here ( e.g.: Silver diamond ring )" type="search">
+                        </form>
                     </div>
                 </section>
-                <section>
-                    <img src="images/crafts.jpg" width="670" height="335" alt="Crafts">
-                    <div class="craft-box">
-                        <span>crafts</span>
-                        <span>$99</span>
-                    </div>
-                </section>
-                <section>
-                    <img src="images/crafts.jpg" width="670" height="335" alt="Crafts">
-                    <div class="craft-box">
-                        <span>crafts</span>
-                        <span>$99</span>
-                    </div>
-                </section>
-                <section>
-                    <img src="images/jewelry.jpg" width="494" height="510" alt="Jewelry">
+                <section class="jewelry">
                     <h1>Jewelry</h1>
+                </section>
+                <section class="crafts">
+                    <div class="craft-box">
+                        <span class="category-name-2">crafts</span>
+                        <a href="#" class="gift"></a>
+                        <a href="#" class="cart">
+                            <div class="tooltip"><p>add to cart</p>
+                            </div>
+                        </a>
+                        <span class="price craft-price">$99</span>
+                    </div>
                 </section>
             </div>
             <section class="new-products">
